@@ -1,7 +1,7 @@
 # spring-boot-influxDB
-    spring-boot-influxDB-master
+    spring-boot-data-es-master
 # 需要环境
-    jdk 21  influx2.x  maven spring-boot
+    jdk 21  Elasticsearch maven spring-boot
 # 包含功能接口
  ## 新增数据
  ## 查询数据

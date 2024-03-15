@@ -4,12 +4,12 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>guru.springframework</groupId>
-	<artifactId>spring-boot-influxdb</artifactId>
+	<artifactId>spring-boot-data-es</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>spring-boot-InfluxDB</name>
-	<description>Demo project for Spring Boot and Influx DB</description>
+	<name>spring-boot-data-es</name>
+	<description>Demo project for Spring Boot and Elasticsearch</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -33,11 +33,7 @@
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
 		</dependency>
-		<dependency>
-			<groupId>com.influxdb</groupId>
-			<artifactId>influxdb-client-java</artifactId>
-			<version>6.10.0</version>
-		</dependency>
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-thymeleaf</artifactId>
@@ -46,10 +42,10 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
+		<!--spring整合elasticsearch包-->
 		<dependency>
-			<groupId>com.influxdb</groupId>
-			<artifactId>influxdb-client-core</artifactId>
-			<version>6.10.0</version>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-elasticsearch</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework</groupId>
