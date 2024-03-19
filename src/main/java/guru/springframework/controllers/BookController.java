@@ -9,6 +9,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.io.IOException;
+
 @RestController
 @RequestMapping("/books")
 public class BookController {
@@ -42,5 +44,15 @@ public class BookController {
             @RequestParam(defaultValue = "10") int size
     ) {
         return bookService.searchBooksByKeyword2(keyword, page, size);
+    }
+
+    @GetMapping("/getIndex")
+    public void getIndex(
+    ) {
+        try {
+            bookService.getIndex();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
     }
 }
